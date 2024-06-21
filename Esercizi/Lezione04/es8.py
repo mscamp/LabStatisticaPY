@@ -28,7 +28,7 @@ class Stats:
             return self.sumsq / self.size
 
     def std(self, bessel = True):
-        return np.sqrt(self.variance(bessel))
+        return np.sqrt(self.var(bessel))
 
     def std_mean(self, bessel = True):
         return self.std(bessel) / np.sqrt(self.size)
