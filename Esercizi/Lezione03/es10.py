@@ -23,8 +23,8 @@ def main():
     ax.set_title("PMF e CDF binomiali")
     ax.set_xlabel("x")
     ax.set_ylabel("y")
-    plt.scatter(x_coord, binomiale.pmf(x_coord), label = "pmf(x)", color = "blue")
-    plt.scatter(x_coord, binomiale.cdf(x_coord), label = "cdf(x)", color = "red")
+    plt.plot(x_coord, binomiale.pmf(x_coord), "o-", label = "pmf(x)", color = "blue")
+    plt.plot(x_coord, binomiale.cdf(x_coord), "o-", label = "cdf(x)", color = "red")
     ax.legend()
 
     plt.show()
