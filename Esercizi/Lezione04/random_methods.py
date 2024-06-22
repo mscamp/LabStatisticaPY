@@ -43,7 +43,7 @@ def inverse_exponential_CDF(y: float, mu: float) -> float: # y con distribuzione
     if mu == 0:
         raise ZeroDivisionError("mu deve essere diverso da zero")
 
-    return (-2.0) * (np.log(1.0 - y) / mu)
+    return (-1.0) * (np.log(1.0 - y) / mu)
 
 def gen_inverse_exponential_CDF(mu: float, N: int) -> list[float]:
 

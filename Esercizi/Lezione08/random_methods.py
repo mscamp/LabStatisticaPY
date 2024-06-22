@@ -45,7 +45,7 @@ def inverse_exponential_CDF(y: float, t_0: float) -> float: # y con distribuzion
 
     mu = 1.0 / t_0
 
-    return (-2.0) * (np.log(1.0 - y) / mu)
+    return (-1.0) * (np.log(1.0 - y) / mu)
 
 def gen_inverse_exponential_CDF(t_0: float, N: int) -> list[float]:
 
