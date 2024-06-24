@@ -96,7 +96,6 @@ def main() -> None:
     print(minuit_obj.params)
     print(minuit_obj.covariance)
     print(minuit_obj.covariance.correlation)
-    minuit_obj.interactive()
 
     # Plot
     fig, ax = plt.subplots(nrows = 1, ncols = 1)
