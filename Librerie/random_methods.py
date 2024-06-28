@@ -3,7 +3,7 @@ import numpy as np
 from random import random
 
 def sturges(n_eventi: int) -> int:
-    return int(np.ceil(0.0 + 3.322 * np.log(n_eventi)))
+    return int(np.ceil(1.0 + 3.322 * np.log(n_eventi)))
 
 def rand_range(x_min: float, x_max: float) -> float:
     return x_min + (x_max - x_min) * random()
